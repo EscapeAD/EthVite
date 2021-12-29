@@ -1,13 +1,15 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { Navbar, Footer, Welcome, Services, Transactions } from './components'
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        MEOW
-      </header>
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services/>
+      <Transactions/>
+      <Footer/>
     </div>
   )
 }
